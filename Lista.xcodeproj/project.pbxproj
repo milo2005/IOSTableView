@@ -12,9 +12,13 @@
 		1B640C6C1EAB0BD2000BD7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B640C6A1EAB0BD2000BD7EC /* Main.storyboard */; };
 		1B640C6E1EAB0BD2000BD7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B640C6D1EAB0BD2000BD7EC /* Assets.xcassets */; };
 		1B640C711EAB0BD2000BD7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B640C6F1EAB0BD2000BD7EC /* LaunchScreen.storyboard */; };
+		1B640C7C1EAB0D15000BD7EC /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B640C7B1EAB0D15000BD7EC /* Libro.swift */; };
+		1B640C7F1EAB0E31000BD7EC /* LibroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B640C7E1EAB0E31000BD7EC /* LibroCell.swift */; };
+		87F8F32029A48B150E8ADBD0 /* Pods_Lista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A83E9EFD9B54595A50C8C9 /* Pods_Lista.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03A83E9EFD9B54595A50C8C9 /* Pods_Lista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B640C631EAB0BD2000BD7EC /* Lista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B640C661EAB0BD2000BD7EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B640C681EAB0BD2000BD7EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		1B640C6D1EAB0BD2000BD7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B640C701EAB0BD2000BD7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B640C721EAB0BD2000BD7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B640C7B1EAB0D15000BD7EC /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		1B640C7E1EAB0E31000BD7EC /* LibroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibroCell.swift; sourceTree = "<group>"; };
+		610BE9A8F852FEE8F7FB119E /* Pods-Lista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lista.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lista/Pods-Lista.debug.xcconfig"; sourceTree = "<group>"; };
+		8EF6B5F81F4F3E813661BAD4 /* Pods-Lista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lista.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lista/Pods-Lista.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F8F32029A48B150E8ADBD0 /* Pods_Lista.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				1B640C651EAB0BD2000BD7EC /* Lista */,
 				1B640C641EAB0BD2000BD7EC /* Products */,
+				51F5E692E5EC3F9C2B9A196C /* Pods */,
+				97E42D5EE095FABFF7C94F08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,8 @@
 		1B640C651EAB0BD2000BD7EC /* Lista */ = {
 			isa = PBXGroup;
 			children = (
+				1B640C7D1EAB0E0C000BD7EC /* Cells */,
+				1B640C781EAB0CE7000BD7EC /* Models */,
 				1B640C661EAB0BD2000BD7EC /* AppDelegate.swift */,
 				1B640C681EAB0BD2000BD7EC /* ViewController.swift */,
 				1B640C6A1EAB0BD2000BD7EC /* Main.storyboard */,
@@ -64,6 +77,39 @@
 			path = Lista;
 			sourceTree = "<group>";
 		};
+		1B640C781EAB0CE7000BD7EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B640C7B1EAB0D15000BD7EC /* Libro.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1B640C7D1EAB0E0C000BD7EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B640C7E1EAB0E31000BD7EC /* LibroCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		51F5E692E5EC3F9C2B9A196C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				610BE9A8F852FEE8F7FB119E /* Pods-Lista.debug.xcconfig */,
+				8EF6B5F81F4F3E813661BAD4 /* Pods-Lista.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97E42D5EE095FABFF7C94F08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A83E9EFD9B54595A50C8C9 /* Pods_Lista.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B640C751EAB0BD2000BD7EC /* Build configuration list for PBXNativeTarget "Lista" */;
 			buildPhases = (
+				25FE7966A825DDA1D90CA411 /* [CP] Check Pods Manifest.lock */,
 				1B640C5F1EAB0BD2000BD7EC /* Sources */,
 				1B640C601EAB0BD2000BD7EC /* Frameworks */,
 				1B640C611EAB0BD2000BD7EC /* Resources */,
+				C2409786D089E6C36CBB93B5 /* [CP] Embed Pods Frameworks */,
+				3FCC89D171F418421FC04988 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +180,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25FE7966A825DDA1D90CA411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FCC89D171F418421FC04988 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lista/Pods-Lista-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2409786D089E6C36CBB93B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lista/Pods-Lista-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B640C5F1EAB0BD2000BD7EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B640C7C1EAB0D15000BD7EC /* Libro.swift in Sources */,
 				1B640C691EAB0BD2000BD7EC /* ViewController.swift in Sources */,
+				1B640C7F1EAB0E31000BD7EC /* LibroCell.swift in Sources */,
 				1B640C671EAB0BD2000BD7EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +357,7 @@
 		};
 		1B640C761EAB0BD2000BD7EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610BE9A8F852FEE8F7FB119E /* Pods-Lista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lista/Info.plist;
@@ -270,6 +370,7 @@
 		};
 		1B640C771EAB0BD2000BD7EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF6B5F81F4F3E813661BAD4 /* Pods-Lista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lista/Info.plist;
@@ -299,6 +400,7 @@
 				1B640C771EAB0BD2000BD7EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
